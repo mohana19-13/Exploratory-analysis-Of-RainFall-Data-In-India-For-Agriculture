@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rainfall Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Rainfall Prediction</h1>
+
+<form method="POST" action="/predict">
+
+    <input type="number" name="location" placeholder="Location"><br><br>
+
+    <input type="number" step="any" name="mintemp" placeholder="Min Temperature" required><br><br>
+    <input type="number" step="any" name="maxtemp" placeholder="Max Temperature" required><br><br>
+    <input type="number" step="any" name="humidity" placeholder="Humidity" required><br><br>
+    <input type="number" step="any" name="pressure" placeholder="Pressure" required><br><br>
+    <input type="number" step="any" name="windspeed" placeholder="Wind Speed" required><br><br>
+    <input type="number" step="any" name="cloud" placeholder="Cloud" required><br><br>
+    <input type="number" step="any" name="rainfall" placeholder="Rainfall" required><br><br>
+
+    <input type="number" name="month" placeholder="Month (1-12)" required><br><br>
+    <input type="number" name="day" placeholder="Day (1-31)" required><br><br>
+    <input type="number" name="year" placeholder="Year" required><br><br>
+    <input type="number" name="season" placeholder="Season (number)" required><br><br>
+
+    <input type="submit" value="Predict">
+
+</form>
+
+</body>
+</html>

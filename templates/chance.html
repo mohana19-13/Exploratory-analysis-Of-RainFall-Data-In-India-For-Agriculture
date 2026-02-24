@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rain Prediction Result</title>
+</head>
+<body>
+
+<h2>🌧️ Chances of Rain Today</h2>
+
+<p>Please carry an umbrella.</p>
+
+<img src="{{ url_for('static', filename='images/chance.png') }}" class="main-image">
+        <div class="bg-blue-950/40 rounded-2xl p-6 border border-blue-800">
+            <h2 class="text-xl font-bold text-blue-300 mb-4">
+                Recommended Agricultural Actions
+            </h2>
+
+            <ul class="space-y-3 text-slate-300">
+                <li>Suspend irrigation cycles immediately</li>
+                <li>Avoid pesticide or fertilizer spraying</li>
+                <li>Ensure proper drainage to prevent waterlogging</li>
+                <li>Delay harvesting operations</li>
+            </ul>
+        </div>
+
+<br><br>
+<a href="/">Go Back</a>
+
+</body>
+</html>
